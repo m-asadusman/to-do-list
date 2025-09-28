@@ -1,0 +1,151 @@
+body{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(100deg, #d4f1ff, #ffffff)
+}
+
+#main{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.h{
+    font-size: 45px;
+    text-align: center;
+    color: #1b1b1b;
+}
+
+#box{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+#inp{
+    width: 86%;
+    height: 40px;
+    padding-left: 12px;
+    padding-right: 12px;
+    font-size: 18px;
+    border: 2px solid #1b1b1b;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+}
+#inp:focus{
+    outline: none;
+}
+
+#addBtn{
+    width: 14%;
+    background-color: #1b1b1b;
+    border: none;
+    cursor: pointer;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: all 0.2s ease;
+}
+#addBtn:focus{
+    outline: none;
+}
+#addBtn:hover{
+    background-color: #000000;    
+}
+
+.taskDiv{
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.li{
+    width: 86.2%;
+    font-size: 22px;
+    overflow: auto;
+}
+
+.btnDiv{
+    width: 13.8%;
+}
+
+.doneBtn{
+    width: 50%;
+    height: 30px;
+    background-color: #3f9e44;
+    border: none;
+    cursor: pointer;
+    border-bottom-left-radius: 5px;
+    border-top-left-radius: 5px;
+    transition: all 0.2s ease;
+}
+.doneBtn:hover{
+    background-color: #36853a;    
+}
+
+.removeBtn{
+    width: 50%;
+    height: 30px;
+    background-color: #9e3f3f;
+    border: none;
+    cursor: pointer;
+    border-bottom-right-radius: 5px;
+    border-top-right-radius: 5px;
+    transition: all 0.2s ease;
+}
+.removeBtn:hover{
+    background-color: #8d3939;    
+}
+
+@media screen and (max-width: 1024px){
+    #main{
+    width: 60%;
+    }
+}
+
+@media screen and (max-width: 768px){
+    #main{
+    width: 70%;
+    }
+
+    #inp{
+        width: 80%;
+    }
+
+    #addBtn{
+        width: 20%;
+    }
+
+    .li{
+        width: 80.8%;
+    }
+
+    .btnDiv{
+        width: 19.2%;
+    }
+}
+
+@media screen and (max-width: 480px){
+    #main{
+    width: 90%;
+    }
+
+    .h{
+    font-size: 35px;
+    }
+
+    #inp{
+        width: 75%;
+        height: 35px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+
+    #addBtn{
+        width: 25%;
+    }
+
+    .li{
+        width: 75.8%;
+    }
+
+    .btnDiv{
+        width: 24.2%;
+    }
+}
