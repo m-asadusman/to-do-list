@@ -56,9 +56,11 @@ body{
 }
 
 .li{
+    list-style-type: none;
     width: 86.2%;
     font-size: 22px;
-    overflow: auto;
+    white-space: normal;
+    word-break: break-word;
 }
 
 .btnDiv{
